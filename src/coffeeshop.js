@@ -25,7 +25,7 @@ const processPayment = (ticketNumber, amount) => {
 }
 
 const orderDrink = (drinkType) => {
-    const drink =  (drinkType);
+    const drink =  createDrink(drinkType);
     const ticket = prepareOrder(drink);
     return processPayment(ticket, drink.price)
 }
