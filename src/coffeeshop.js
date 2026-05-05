@@ -30,6 +30,4 @@ const orderDrink = (drinkType) => {
     return processPayment(ticket, drink.price)
 }
 
-console.log(createDrink(orderDrink("juice")));
-
 module.exports = { createDrink, prepareOrder, orderDrink, processPayment };
